@@ -7,7 +7,7 @@ class Prueba extends PHPUnit_Framework_TestCase
 public function testPrueba(){
 	
 
-	$this->assertEquals(true, true);
+	$this->assertEquals(false, true);
 }
 
 

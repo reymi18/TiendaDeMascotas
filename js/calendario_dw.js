@@ -300,7 +300,7 @@ dia=dia+"";
 numDiaPulsado=numDiaPulsado+"";
 if(parseInt(dia)<=numDiaPulsado){
 
-					elem.val(numDiaPulsado + "/" + 10 + "/" + ano);
+					elem.val(numDiaPulsado + "/" + 11 + "/" + ano);
 					calendario.fadeOut();
 				}
 			})

@@ -1,5 +1,5 @@
 <?php
-	include './conexion.php';
+	include 'conexion.php';
 	class Prueba extends PHPUnit_Framework_TestCase
 	{
 

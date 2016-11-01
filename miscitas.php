@@ -38,7 +38,7 @@
 
 </head>
 <body onload="cargarcitas()">
-	<div id="contenedorCitas"></div>
+	<div id="contenedorCitas" class="contenedorCitas"></div>
 <script src="js/alertify.js"></script>
 
 </body>

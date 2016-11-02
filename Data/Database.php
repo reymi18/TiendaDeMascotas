@@ -1,7 +1,7 @@
-<?php
-
-$host="localhost";
-$user="root";
-$pw="";
-$db="creacionsgric";
-?>
+<?php
+
+$host="localhost";
+$user="root";
+$pw="";
+$db="creacionsgric";
+?>

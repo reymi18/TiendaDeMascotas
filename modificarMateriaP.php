@@ -26,13 +26,13 @@
 $clave=$_GET['clave'];
  include('conexion.php');
 $link=Conectarse();
-$result = mysql_query("SELECT * FROM materiaprima where id = $clave;", $link);  
+$result = mysqli_query($link,"SELECT * FROM materiaprima where id = $clave;");  
  $id=0;
  $nombre="";
  $cant=0;
  $unidad="";
 
-while ($row = mysql_fetch_row($result)){   
+while ($row = mysqli_fetch_row($result)){   
      
     $id=$row[0];  
     $nombre=$row[1]; 

@@ -6,7 +6,7 @@ $cant = $_GET['cant'];
 
 include("conexion.php");
 $link = Conectarse();
- mysql_query("INSERT INTO materiaprima VALUES(0,'$nombre','$unidad',$cant);",$link);  
+ mysqli_query($link,"INSERT INTO materiaprima VALUES(0,'$nombre','$unidad',$cant);");  
  mysql_close($link);
 ?>
 <?php

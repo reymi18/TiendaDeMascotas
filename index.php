@@ -18,7 +18,7 @@ include("conexion.php");
         <li><a href="index.php">Inicio</a></li>
         <li><a href="#">.</a></li>
         <li><a href="#">.</a></li>
-        <li><a href="./AdministarUsuario/FormularioInsertUsuario.php">Registarse</a></li>
+        <li><a href="AdministarUsuario/FormularioInsertUsuario.php">Registarse</a></li>
         <li><a type="submit" name="InicioSesion" onClick="inicioSesion()">Iniciar Sesion</a></li>
       </ul>
   </nav>

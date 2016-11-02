@@ -1,4 +1,3 @@
-
 <?php
 // cargar la lista de servicios por tipo de animal
 function cargarServicios($animal){
@@ -427,18 +426,14 @@ function Conectarse(){
 $servidor = "68.178.143.152"; //el servidor que utilizaremos, en este caso será el localhost
 $usuario = "ucrgrupo1"; //El usuario que acabamos de crear en la base de datos
 $contrasenha = "BelwQGrup1#"; //La contraseña del usuario que utilizaremos
-$BD = "ucrgrupo1"; //El nombre de la base de datos
- $con=null;
+$BD = "ucrgrupo1"; //El nombre de la base de datos 
 $mysqli = new mysqli($servidor, $usuario, $contrasenha, $BD);
+$tildes = $mysqli->query("SET NAMES 'utf8'");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}else{
-	
- $con =mysql_connect($servidor,$usuario,$contrasenha);
- mysql_select_db($BD,$con);
-
+}else{  
 }
-return $con;
+return $mysqli;
 }
 
 //*********************************************CONEXION REYMI************ADMINISTRACION DE USUARIOS*************************************

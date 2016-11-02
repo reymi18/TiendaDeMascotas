@@ -28,7 +28,7 @@ $buscar = $_GET['buscar'];
 include("conexion.php");  
 $link = Conectarse();  
 //se envia la consulta  
-$result = mysql_query("SELECT * FROM materiaprima where nombre like '%".$buscar."%' ;", $link);  
+$result = mysqli_query($link,"SELECT * FROM materiaprima where nombre like '%".$buscar."%' ;");  
 //se despliega el resultado  
 echo "<div style='text-align:center;'>" ;
 echo "<table border='1' style='margin: 0 auto;'>";   
@@ -40,7 +40,7 @@ echo "<th>Cantidad</th>";
 echo "<th>Opción</th>";  
 echo "<th>Opción</th>";  
 echo "</tr>";  
-while ($row = mysql_fetch_row($result)){   
+while ($row = mysqli_fetch_row($result)){   
     echo "<tr>";  
     echo "<td>$row[0]</td>";  
     echo "<td>$row[1]</td>";  
